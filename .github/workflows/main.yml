@@ -2,9 +2,9 @@ name: x05  c++ CI
 
 on:
    push:
-     branches: [ master ]
+     branches: [ main ]
    pull_request:
-     branches: [ master ]
+     branches: [ main ]
 
 jobs:
   build:
@@ -12,5 +12,5 @@ jobs:
     steps:
      - uses: actions/checkout@v2
      - name: Compile C++ 2017
-     run: g++ test.cpp -std=c++17 -o test
+       run: g++ test.cpp -std=c++17 -o test
     
