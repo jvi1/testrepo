@@ -9,7 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    - uses: actions/checkout@v2
-    - name: Compile C++ 2017
-    run: g++ test.cpp -std=c++17 -o test
+    steps:
+     - uses: actions/checkout@v2
+     - name: Compile C++ 2017
+     run: g++ test.cpp -std=c++17 -o test
     
